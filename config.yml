@@ -1,0 +1,8 @@
+logging:
+  level: INFO
+  loggers:
+    com.apple.jay: DEBUG
+server:
+  applicationConnectors:
+    - type: http
+      port: 8080

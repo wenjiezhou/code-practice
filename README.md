@@ -73,6 +73,7 @@ TODO
 ---
 1. Unit test coverage.
 1. Integration test coverage.
+1. Research: more optimal and effective way to get standard deviation.
 1. Logging.
 1. Error and exception handling.
 1. Fix Dependency Injection thus we can stopping using Enum of singleton pattern.

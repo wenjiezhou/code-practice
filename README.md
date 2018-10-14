@@ -77,6 +77,6 @@ TODO
 
 Reference
 ---
-https://www.dropwizard.io/1.3.5/docs/getting-started.html
-http://jonisalonen.com/2013/deriving-welfords-method-for-computing-variance/
-https://www.johndcook.com/blog/standard_deviation/
+1. https://www.dropwizard.io/1.3.5/docs/getting-started.html
+1. http://jonisalonen.com/2013/deriving-welfords-method-for-computing-variance/
+1. https://www.johndcook.com/blog/standard_deviation/

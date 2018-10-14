@@ -2,9 +2,7 @@ package com.apple.jay.util;
 
 import java.util.ArrayList;
 import java.util.List;
-import javax.inject.Singleton;
 
-@Singleton
 public enum RunninStatistic {
     INSTANCE;
     

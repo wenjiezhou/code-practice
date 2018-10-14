@@ -16,34 +16,34 @@ End Points Supported By this App
 
 Sample Request and Response
 ---
-1, POST    http://localhost:8080/v1/apple/push-recalculate?value=4
+1. POST    http://localhost:8080/v1/apple/push-recalculate?value=4
 response: 
 {
   "average": 4,
   "standard_deviation": 0
 }
 
-2, POST    http://localhost:8080/v1/apple/push-recalculate?value=7
+1. POST    http://localhost:8080/v1/apple/push-recalculate?value=7
 response:
 {
   "average": 5.5,
   "standard_deviation": 1.5
 }
 
-3. POST    http://localhost:8080/v1/apple/push-recalculate-encrypt?value=6
+1. POST    http://localhost:8080/v1/apple/push-recalculate-encrypt?value=6
 response:
 {
   "encrypted_average": "lqlWeJBXeyfnlmqDbkq3lQ==",
   "encrypted_standard_deviation": "NH7lfUsyok7iKDwRnfKDPw=="
 }
 
-4. GET  http://localhost:8080/v1/apple/decrypt?value=lqlWeJBXeyfnlmqDbkq3lQ==
+1. GET  http://localhost:8080/v1/apple/decrypt?value=lqlWeJBXeyfnlmqDbkq3lQ==
 response:
 {
   "plaintext": "5.667"
 }
 
-5. GET  http://localhost:8080/v1/apple/decrypt?value=NH7lfUsyok7iKDwRnfKDPw==
+1. GET  http://localhost:8080/v1/apple/decrypt?value=NH7lfUsyok7iKDwRnfKDPw==
 response:
 {
   "plaintext": "1.247"
@@ -53,7 +53,7 @@ Design
 ---
 Mean
 --
-keep tracking the total sum and # of values that has been pushed, return (sum / #) to get average/mean.
+Keep tracking the total sum and # of values that has been pushed, return (sum / #) to get average/mean.
 
 Standard Deviation
 --
@@ -66,14 +66,14 @@ AES/CBC/PKCS5PADDING symmetric cryptography algorithm is used with 128 bits rand
 
 TODO
 ---
-1, Unit test coverage.
-2, Integration test coverage.
-3, Logging.
-4, Error and exception handling.
-5, Fix Dependency Injection thus we can stopping using Enum of singleton pattern.
-6, Use 256 bits key for AES encrypt/decrypt, which is better practice.
-7, More comments.
-8, Api Spec/Doc.
+1. Unit test coverage.
+1. Integration test coverage.
+1. Logging.
+1. Error and exception handling.
+1. Fix Dependency Injection thus we can stopping using Enum of singleton pattern.
+1. Use 256 bits key for AES encrypt/decrypt, which is better practice.
+1. More comments.
+1. Api Spec/Doc.
 
 Reference
 ---

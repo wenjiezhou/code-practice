@@ -13,6 +13,11 @@ End Points Supported By this App
     GET     /v1/apple/decrypt
     POST    /v1/apple/push-recalculate
     POST    /v1/apple/push-recalculate-encrypt
+    
+How to test this APIs
+---
+- Any API testing tools can be used to test these 3 endpoint.
+- In case if you are using PostMan, share the collection here: https://www.getpostman.com/collections/1137cb06803b3dfdf618
 
 Sample Request and Response
 ---

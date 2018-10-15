@@ -31,7 +31,7 @@ public class CryptoResource {
         }
         runninStatistic.push(value.get());
         double mean = runninStatistic.mean();
-        double sd = runninStatistic.standardDeviation();
+        double sd = runninStatistic.standardDeviation(value.get());
         return new CryptoResponse.Builder()
                 .average(numberHelper.rounding(mean, 3, RoundingMode.HALF_UP))
                 .standardDeviation(numberHelper.rounding(sd, 3, RoundingMode.HALF_UP))
@@ -45,7 +45,7 @@ public class CryptoResource {
         }
         runninStatistic.push(value.get());
         double mean = runninStatistic.mean();
-        double sd = runninStatistic.standardDeviation();
+        double sd = runninStatistic.standardDeviation(value.get());
         double roundedMean = numberHelper.rounding(mean, 3, RoundingMode.HALF_UP);
         double roundedSd = numberHelper.rounding(sd, 3, RoundingMode.HALF_UP);
         return new CryptoResponse.Builder()

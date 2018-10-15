@@ -63,6 +63,8 @@ Keep tracking the total sum and # of values that has been pushed, return (sum / 
 Standard Deviation
 --
 By far, the Welford's method is most accurate and efficient way to compute standard deviation.
+Derived the formula from Welford's method, by keep updating m and n when new value is pushed, we can find out 
+the sd for current value without knowing the data history.
 Reference: http://jonisalonen.com/2013/deriving-welfords-method-for-computing-variance/
 
 Encryptor
@@ -73,7 +75,6 @@ TODO
 ---
 1. Unit test coverage.
 1. Integration test coverage.
-1. Research: more optimal and effective way to get standard deviation.
 1. Logging.
 1. Error and exception handling.
 1. Fix Dependency Injection thus we can stopping using Enum of singleton pattern.
